@@ -3,14 +3,15 @@ import Layout from "../components/layout/Layout";
 import ProtectRoute from "./ProtectRoute";
 import About from "../pages/About";
 import Welcome from "../pages/Welcome";
+import EPath from "./path";
 
 const router = createBrowserRouter([
 	{
-		path: "/welcome",
+		path: EPath.Welcome,
 		element: <Welcome />,
 	},
 	{
-		path: "/",
+		path: EPath.Index,
 		element: (
 			<ProtectRoute>
 				<Layout />
