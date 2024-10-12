@@ -24,8 +24,6 @@
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
-		"commitlint": "commitlint --edit",
-		"commitizen": "exec < /dev/tty && git cz --hook || true",
 		"prepare": "husky"
 	},
 	"dependencies": {
