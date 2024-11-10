@@ -1,0 +1,48 @@
+:root {
+	--radius-16: "16px";
+}
+
+body {
+	overflow: hidden;
+	font-family: "Oswald", sans-serif;
+	font-optical-sizing: auto;
+}
+
+/* Theme */
+.light {
+	--background: #f5f5f5;
+	--background-bold: #101010;
+	--background-light: #f4ede4;
+	--text-color: #000000;
+	--text-primary: #ffa500;
+	--text-green: #7ec727;
+	--background-card: #ccd5ae;
+	--link: #0077b6;
+	--opposite-black: #ffffff;
+}
+
+.dark {
+	--background: #1e1e1e;
+	--background-bold: #101010;
+	--background-light: #202023;
+	--text-color: #f3f5f7;
+	--text-primary: #ffa500;
+	--text-green: #7ec727;
+	--background-card: #333336;
+	--link: #90e0ef;
+	--opposite-black: #ffffff;
+}
+
+@media (prefers-color-schema: dark) {
+	:root {
+		--background: #202023;
+		--background-bold: #101010;
+		--background-light: #202023;
+		--text-color: #e3e3e3;
+		--text-primary: #ffa500;
+		--text-green: #7ec727;
+		--background-card: #333336;
+		--link: #90e0ef;
+		--opposite-black: #ffffff;
+	}
+}

@@ -1,5 +1,6 @@
 enum EPath {
 	Index = "/",
+	Login = "/login",
 	Welcome = "/welcome",
 }
 
