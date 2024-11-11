@@ -27,6 +27,7 @@
 		"prepare": "husky"
 	},
 	"dependencies": {
+		"@apollo/client": "^3.11.9",
 		"@hookform/resolvers": "^3.9.0",
 		"@tanstack/react-query": "^5.51.23",
 		"@tanstack/react-table": "^8.20.1",
