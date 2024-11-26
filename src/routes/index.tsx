@@ -1,10 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
-import Layout from "../components/layout/Layout";
+// import Layout from "../components/layout/Layout";
 import ProtectRoute from "./ProtectRoute";
 import About from "../pages/About";
 import Welcome from "../pages/Welcome";
 import EPath from "./path";
 import LoginPage from "../pages/login";
+import Layout from "@/components/layouts/auth";
+import Main from "@/pages/main";
 
 const router = createBrowserRouter([
 	{
@@ -17,15 +19,11 @@ const router = createBrowserRouter([
 	},
 	{
 		path: EPath.Index,
-		element: (
-			<ProtectRoute>
-				<Layout />
-			</ProtectRoute>
-		),
+		element: <Layout />,
 		children: [
 			{
-				path: "about",
-				element: <About />,
+				path: EPath.Index,
+				element: <Main />,
 			},
 		],
 	},
